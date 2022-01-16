@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="menu-lateral">
+        <div class="logo">
+            <i class="logo__icon logo__icon--page fab fa-css3-alt"></i>
+            <span class="logo__title">CodingLab</span>
+            <i class="icon logo__icon logo__icon--menu fas fa-bars" data-toogle="menu"></i>
+        </div>
+        <div class="menu-lateral__nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="https://www.google.com.pe" target="_blank">
+                        <i class="icon menu__icon fas fa-search"></i>
+                        <span class="menu__text">Search</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="https://www.google.com.pe" target="_blank">
+                        <i class="icon menu__icon fas fa-user"></i>
+                        <span class="menu__text">User</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="https://www.google.com.pe" target="_blank">
+                        <i class="icon menu__icon fas fa-comments"></i>
+                        <span class="menu__text">Messages</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="https://www.google.com.pe" target="_blank">
+                        <i class="icon menu__icon fas fa-chart-pie"></i>
+                        <span class="menu__text">Analytics</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="https://www.google.com.pe" target="_blank">
+                        <i class="icon menu__icon fas fa-folder"></i>
+                        <span class="menu__text">File Manager</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="https://www.google.com.pe" target="_blank">
+                        <i class="icon menu__icon fas fa-shopping-cart"></i>
+                        <span class="menu__text">Order</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="https://www.google.com.pe" target="_blank">
+                        <i class="icon menu__icon far fa-heart"></i>
+                        <span class="menu__text">Saved</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="https://www.google.com.pe" target="_blank">
+                        <i class="icon menu__icon fas fa-cog"></i>
+                        <span class="menu__text">Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-lateral__user">
+            <div class="user">
+                <img src="https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/media/2019/11/08/perfil_personas_cuesta_perdonar.jpg" alt="" class="user__img">
+                <div class="user__content">
+                    <span>Prem Shadi</span>
+                    <span>Web Designer</span>
+                </div>
+                <i class="icon user__icon fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <p class="header__title">Header</p>
+            <i class="icon icon-menu fas fa-bars" data-toogle="menu"></i>
+        </div>
+        <main class="main">
+            <div class="main__left">
+            </div>
+            <div class="main__center">
+                <img class="main__gif" src="https://www.chiquipedia.com/imagenes/gifs-animados-pokemon-picachu-1.gif"  alt="picachu saludando">
+                <h1>Hola</h1>
+            </div>
+            <div class="main__right">
+            </div>
+        </main>
+        <footer class="footer">
+            <p>
+                Created by <a href="https://www.facebook.com/jersonomar.ramirezortiz/z">Jerson Ramírez</a>
+            </p>
+        </footer>
+    </div>
+</body>
+<script>
+    const menuLateral = document.querySelector(".menu-lateral");
+    const menuIcons = [...document.querySelectorAll("[data-toogle=menu]")];
+    menuIcons.forEach((icon)=>{
+        icon.addEventListener('click',e=>{
+            menuLateral.classList.toggle("menu-lateral--active");
+        });    
+    });
+</script>
+</html>
